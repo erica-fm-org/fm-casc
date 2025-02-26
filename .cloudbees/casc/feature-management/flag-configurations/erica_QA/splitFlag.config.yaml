@@ -1,0 +1,25 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: splitFlag
+
+enabled: false
+
+stickinessProperty: rox.distinct_id
+
+defaultValue:
+  valueWrittenInCode: true
+
+conditions:
+  - allOf:
+      - flag:
+          name: default.titleColors
+          value: Blue
+    flagValue:
+      - percentage: 33
+        option: cats
+      - percentage: 33
+        option: dogs
+      - percentage: 34
+        option: snake

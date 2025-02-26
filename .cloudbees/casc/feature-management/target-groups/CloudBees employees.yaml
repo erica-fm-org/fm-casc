@@ -1,0 +1,15 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: target-group
+
+name: CloudBees employees
+
+description: 
+
+conditions:
+  allOf:
+    - property:
+        name: user email address
+        operator: regex
+        operands:
+            - '**.cloubees.com'

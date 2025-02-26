@@ -1,0 +1,15 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: splitFlag
+flagType: string
+description: 
+labels:
+
+availableValues:
+  - cats
+  - dogs
+  - snake
+
+isPermanent: false

@@ -1,0 +1,19 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: default.titleColors
+
+enabled: true
+
+stickinessProperty: rox.distinct_id
+
+defaultValue: Pink
+
+conditions:
+  - allOf:
+      - property:
+          name: demo.message1
+          operator: is-false
+    flagValue:
+      valueWrittenInCode: true

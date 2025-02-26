@@ -1,0 +1,16 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: default.titleSize
+flagType: string
+description: 
+labels:
+
+availableValues:
+  - 3
+  - 14
+  - 2
+  - 24
+
+isPermanent: false

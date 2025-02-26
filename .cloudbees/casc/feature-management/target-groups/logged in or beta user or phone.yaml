@@ -1,0 +1,25 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: target-group
+
+name: logged in or beta user or phone
+
+description: phone user who are either logged in or beta user 
+
+conditions:
+  anyOf:
+    - allOf:
+        - group:
+            name: Naveen
+    - property:
+        name: demo.showMessage1
+        operator: is-true
+    - property:
+        name: demo.titlesize1
+        operator: is-true
+    - property:
+        name: demo.fontcolor1
+        operator: is-true
+    - property:
+        name: demo.message1
+        operator: is-true
