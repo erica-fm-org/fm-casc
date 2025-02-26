@@ -4,14 +4,10 @@ kind: flag-configuration
 
 flag: show
 
-enabled: false
+enabled: true
 
 stickinessProperty: rox.distinct_id
 
-defaultValue:
-  - percentage: 50
-    option: true
-  - percentage: 50
-    option: false
+defaultValue: true
 
 conditions: []
