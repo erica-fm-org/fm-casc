@@ -4,14 +4,14 @@ kind: flag-configuration
 
 flag: isScheduleFlag
 
-enabled: true
+enabled: false
 
 stickinessProperty: rox.distinct_id
 
 defaultValue:
-  - percentage: 75
+  - percentage: 50
     option: true
-  - percentage: 25
+  - percentage: 50
     option: false
 
 conditions: []
