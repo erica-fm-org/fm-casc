@@ -8,12 +8,6 @@ enabled: true
 
 stickinessProperty: rox.distinct_id
 
-defaultValue: Pink
+defaultValue: Yellow
 
-conditions:
-  - allOf:
-      - property:
-          name: demo.message1
-          operator: is-false
-    flagValue:
-      valueWrittenInCode: true
+conditions: []
