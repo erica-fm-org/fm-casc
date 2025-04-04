@@ -4,10 +4,10 @@ kind: flag-configuration
 
 flag: default.titleColors
 
-enabled: false
+enabled: true
 
 stickinessProperty: rox.distinct_id
 
-defaultValue: Blue
+defaultValue: Red
 
 conditions: []
